@@ -16,6 +16,8 @@ const institution = "Cornell University (Cornell Tech)"
         <h3>{{ institution }}</h3>
         <div class="social-media">
             <a href="https://github.com/KaKituken" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/jixuan-he/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=xCIYDzsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="bi bi-google"></i></a>
         </div>
       </div>
     </div>
@@ -80,11 +82,12 @@ const institution = "Cornell University (Cornell Tech)"
     /* height: 10rem;
     width: 10rem; */
     display: flex;
-    background-color: #eee;
+    /* background-color: #eee; */
+    gap: 0.5rem;
 }
 
 .social-media i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav {
