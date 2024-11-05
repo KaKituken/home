@@ -1,44 +1,64 @@
 <script setup>
+import { computed } from 'vue'
+
+function openImage(url) {
+  if (url) {
+    window.open(url, '_blank');
+  }
+}
+
 const publications = [
   {
-    title: "Machine Learning Applications in Modern Computing",
-    authors: "Doe, J., Smith, A., Johnson, B.",
-    journal: "Journal of Computer Science",
-    year: 2023,
-    doi: "10.1000/js.2023.1234",
-    preview: "https://picsum.photos/400/500?random=1",
-    abstract: "This paper explores the latest applications of machine learning in modern computing systems, focusing on practical implementations and performance optimization."
+    title: "Putting Any Object into Any Scene: Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
+    authors: "Jixuan He, Wanhua Li*, Ye Liu, Junsik Kim, Donglai Wei, Hanspeter Pfister",
+    journal: "Under Review",
+    year: null,
+    preview: "/assets/he2024affordance.jpg",
+    abstract: null,
+    arxiv: null,
+    code: null,
+    poster: null,
+    demo: null
   },
   {
-    title: "Neural Networks: A New Perspective",
-    authors: "Doe, J., Anderson, M.",
-    journal: "Artificial Intelligence Review",
-    year: 2022,
-    doi: "10.1000/air.2022.5678",
-    preview: "https://picsum.photos/400/500?random=2",
-    abstract: "A comprehensive review of neural network architectures and their applications in solving complex computational problems."
+    title: "R2-Tuning: Efficient Image-to-Video Transfer Learning for Video Temporal Grounding",
+    authors: "Ye Liu, Jixuan He, Wanhua Li*, Junsik Kim, Donglai Wei, Hanspeter Pfister, Chang Wen Chen*",
+    journal: "The European Conference on Computer Vision (ECCV)",
+    year: 2024,
+    preview: "/assets/liu2024tuning.jpg",
+    abstract: null,
+    arxiv: null,
+    code: null,
+    poster: null,
+    demo: null
   }
 ]
+
+const highlightedPublications = computed(() => {
+  return publications.map(pub => ({
+    ...pub,
+    highlightedAuthors: pub.authors.replace(/\bJixuan He\b/g, '<span class="highlighted-author">Jixuan He</span>')
+  }))
+})
 </script>
 
 <template>
   <section id="publications" class="section">
     <h2>Publications</h2>
     <div class="publications-list">
-      <article v-for="pub in publications" :key="pub.doi" class="publication">
+      <article v-for="pub in highlightedPublications" :key="pub.doi" class="publication">
         <div class="publication-content">
           <div class="publication-text">
             <h3>{{ pub.title }}</h3>
-            <p class="authors">{{ pub.authors }}</p>
-            <p class="journal">{{ pub.journal }} ({{ pub.year }})</p>
+            <p class="authors" v-html="pub.highlightedAuthors"></p>
+            <p class="journal">{{ pub.journal }} {{ pub.year }}</p>
             <p class="abstract">{{ pub.abstract }}</p>
-            <p class="doi">DOI: {{ pub.doi }}</p>
           </div>
           <div class="publication-preview">
             <img 
               :src="pub.preview" 
               :alt="'Preview of ' + pub.title"
-              @click="() => window.open(pub.preview, '_blank')"
+              @click="openImage(pub.preview)"
             >
           </div>
         </div>
@@ -49,12 +69,17 @@ const publications = [
 
 <style scoped>
 .section {
-  padding: 3rem 0;
+  padding: 2rem 0 0 0;
   border-bottom: 1px solid #eee;
+}
+
+.section h2{
+    margin-bottom: 2rem;
 }
 
 .publication {
   margin-bottom: 2rem;
+  height: 10rem;
   padding: 1.5rem;
   background: #f8f9fa;
   border-radius: 8px;
@@ -69,10 +94,11 @@ const publications = [
 .publication-content {
   display: flex;
   gap: 2rem;
+  height: 100%;
 }
 
 .publication-text {
-  flex: 1;
+  flex: 6;
 }
 
 .publication h3 {
@@ -84,6 +110,12 @@ const publications = [
   color: #34495e;
   margin: 0.5rem 0;
   font-weight: 500;
+}
+
+.authors span {
+  font-weight: bold;
+  font-size: x-large;
+  color: #e74c3c; /* Choose a color that stands out */
 }
 
 .journal {
@@ -105,15 +137,17 @@ const publications = [
 }
 
 .publication-preview {
-  flex: 0 0 200px;
+  flex: 1 0 200px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
+  background-color: white;
 }
 
 .publication-preview img {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 100%;
+  object-fit:contain;
   border-radius: 4px;
   cursor: pointer;
   transition: transform 0.2s;

@@ -16,7 +16,7 @@ const interests = [
 </script>
 
 <template>
-  <section id="research" class="section">
+  <!-- <section id="research" class="section">
     <h2>Research Interests</h2>
     <div class="interests-grid">
       <div v-for="interest in interests" :key="interest.title" class="interest-card">
@@ -24,7 +24,7 @@ const interests = [
         <p>{{ interest.description }}</p>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 
 <style scoped>

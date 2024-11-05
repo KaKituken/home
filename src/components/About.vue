@@ -25,7 +25,7 @@
 
 <style scoped>
 .section {
-  padding: 3rem 0;
+  padding: 0rem 0;
   border-bottom: 1px solid #eee;
 }
 
