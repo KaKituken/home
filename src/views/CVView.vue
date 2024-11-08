@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 // 定义 CV 的 URL
-const cvUrl = `../assets/CV-JixuanHe.pdf`
+const cvUrl = `${import.meta.env.BASE_URL}assets/CV-JixuanHe.pdf`
 </script>
 
 
