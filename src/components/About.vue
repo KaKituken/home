@@ -100,5 +100,6 @@ li {
 
 .news-container ul {
   font-family: comic sans ms;
+  font-size: small
 }
 </style>
