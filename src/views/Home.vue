@@ -28,7 +28,7 @@ function scrollToSection(sectionId) {
 <style scoped>
 .container {
   /* max-width: 50vw; */
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
 }

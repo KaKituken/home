@@ -95,7 +95,7 @@ const highlightedPublications = computed(() => {
 
 .publication {
   margin-bottom: 2rem;
-  height: 10rem;
+  height: 12rem;
   padding: 1.5rem;
   background: #f8f9fa;
   border-radius: 8px;
