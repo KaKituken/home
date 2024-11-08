@@ -48,7 +48,7 @@ const images = [
 
 <style scoped>
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 2rem;
 }

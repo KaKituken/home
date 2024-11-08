@@ -8,25 +8,17 @@ const contact = {
 </script>
 
 <template>
-  <section id="contact" class="section">
-    <h2>Contact</h2>
+  <section id="visit" class="section">
+    <h2>Also Visit</h2>
     <div class="contact-info">
       <div class="contact-item">
-        <strong>Email:</strong>
-        <a :href="'mailto:' + contact.email">{{ contact.email }}</a>
-      </div>
-      <!-- <div class="contact-item">
-        <strong>Office:</strong>
-        <span>{{ contact.office }}</span>
+        <strong>Yaqing Yang:</strong>
+        <a href="https://yyqbeatrice.github.io/yaqing">https://yyqbeatrice.github.io/yaqing/</a>
       </div>
       <div class="contact-item">
-        <strong>Address:</strong>
-        <span>{{ contact.address }}</span>
-      </div> -->
-      <!-- <div class="contact-item">
-        <strong>Phone:</strong>
-        <span>{{ contact.phone }}</span>
-      </div> -->
+        <strong>Siwei Li:</strong>
+        <a href="https://www.siweili.tech/">https://www.siweili.tech/</a>
+      </div>
     </div>
   </section>
 </template>
@@ -48,7 +40,7 @@ const contact = {
 }
 
 .contact-item strong {
-  min-width: 80px;
+  /* min-width: 80px; */
   color: #2c3e50;
 }
 

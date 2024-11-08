@@ -1,7 +1,11 @@
 <script setup>
-const name = "Jixuan He (何吉轩)"
+const name = "Jason Jixuan He (何吉轩)"
 const title = "M.Eng. CS"
 const institution = "Cornell University (Cornell Tech)"
+
+const props = defineProps({
+  scrollToSection: Function
+});
 </script>
 
 <template>
@@ -15,23 +19,26 @@ const institution = "Cornell University (Cornell Tech)"
         <h2>{{ title }}</h2>
         <h3>{{ institution }}</h3>
         <div class="social-media">
-            <a href="https://github.com/KaKituken" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/jixuan-he/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-            <a href="https://scholar.google.com/citations?user=xCIYDzsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="bi bi-google"></i></a>
+            <a href="mailto:jh2926@cornell.edu" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/KaKituken" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jixuan-he/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=xCIYDzsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar"></i></a>
+            <a href="https://x.com/kirino_ken" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
       </div>
     </div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#publications">Publications</a>
-      <a href="#research">Research</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" @click.prevent="scrollToSection('about')">About</a>
+      <a href="#publications" @click.prevent="scrollToSection('publications')">Publications</a>
+      <a href="#research" @click.prevent="scrollToSection('research')">Research</a>
+      <router-link to="/cv" class="gallery-link">CV</router-link>
       <router-link to="/gallery" class="gallery-link">Gallery</router-link>
     </nav>
   </header>
 </template>
 
 <style scoped>
+
 .header {
   padding: 2rem 0;
   border-bottom: 1px solid #eee;
@@ -86,8 +93,19 @@ const institution = "Cornell University (Cornell Tech)"
     gap: 0.5rem;
 }
 
+.social-media a {
+  text-align: center;
+}
+
 .social-media i {
     font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    line-height: inherit;
+}
+
+.social-media i:hover {
+  color: #228b22;
 }
 
 nav {
@@ -103,10 +121,10 @@ nav a {
 }
 
 nav a:hover, nav a.router-link-active {
-  color: #42b883;
+  color: #228b22;
 }
 
 .gallery-link {
-  color: #42b883;
+  color: #2c3e50;
 }
 </style>

@@ -10,27 +10,27 @@ function openImage(url) {
 const publications = [
   {
     title: "Putting Any Object into Any Scene: Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
-    authors: "Jixuan He, Wanhua Li*, Ye Liu, Junsik Kim, Donglai Wei, Hanspeter Pfister",
+    authors: "<strong>Jixuan He</strong>, Wanhua Li*, Ye Liu, Junsik Kim, Donglai Wei, Hanspeter Pfister",
     journal: "Under Review",
     year: null,
     preview: `${import.meta.env.BASE_URL}assets/he2024affordance.jpg`,
-    abstract: null,
     arxiv: null,
     code: null,
-    poster: null,
-    demo: null
+    project: null,
+    demo: null,
+    poster: null
   },
   {
     title: "R2-Tuning: Efficient Image-to-Video Transfer Learning for Video Temporal Grounding",
-    authors: "Ye Liu, Jixuan He, Wanhua Li*, Junsik Kim, Donglai Wei, Hanspeter Pfister, Chang Wen Chen*",
+    authors: "Ye Liu, <strong>Jixuan He</strong>, Wanhua Li*, Junsik Kim, Donglai Wei, Hanspeter Pfister, Chang Wen Chen*",
     journal: "The European Conference on Computer Vision (ECCV)",
     year: 2024,
     preview: `${import.meta.env.BASE_URL}assets/liu2024tuning.jpg`,
-    abstract: null,
-    arxiv: null,
-    code: null,
-    poster: null,
-    demo: null
+    arxiv: "https://arxiv.org/abs/2404.00801",
+    code: "https://github.com/yeliudev/R2-Tuning?tab=readme-ov-file",
+    project: null,
+    demo: "https://huggingface.co/spaces/yeliudev/R2-Tuning",
+    poster: "https://yeliu.dev/lib/files/r2tuning_poster.pdf"
   }
 ]
 
@@ -52,7 +52,23 @@ const highlightedPublications = computed(() => {
             <h3>{{ pub.title }}</h3>
             <p class="authors" v-html="pub.highlightedAuthors"></p>
             <p class="journal">{{ pub.journal }} {{ pub.year }}</p>
-            <p class="abstract">{{ pub.abstract }}</p>
+            <div class="links">
+              <a class="links-item arxiv" v-if="pub.arxiv" :href="pub.arxiv">
+                arxiv
+              </a>
+              <a class="links-item code" v-if="pub.code" :href="pub.code">
+                code
+              </a>
+              <a class="links-item project" v-if="pub.project" :href="pub.project">
+                project
+              </a>
+              <a class="links-item poster" v-if="pub.poster" :href="pub.poster">
+                poster
+              </a>
+              <a class="links-item demo" v-if="pub.demo" :href="pub.demo">
+                demo
+              </a>
+            </div>
           </div>
           <div class="publication-preview">
             <img 
@@ -98,6 +114,7 @@ const highlightedPublications = computed(() => {
 }
 
 .publication-text {
+  position: relative;
   flex: 6;
 }
 
@@ -130,10 +147,80 @@ const highlightedPublications = computed(() => {
   line-height: 1.6;
 }
 
-.doi {
-  color: #95a5a6;
-  font-size: 0.9rem;
-  margin: 0.5rem 0 0;
+.publication-content .links {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  /* background-color: white; */
+  bottom: 0;
+  gap: 0.7rem;
+  line-height: inherit;
+}
+
+.links .links-item {
+  border-width: 1px;
+  border-color: #b9b7bd;
+  border-style: solid;
+  line-height: inherit;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-style: italic;
+  border-radius: 5%;
+  font-weight: 200;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.links .links-item:hover {
+  transform: scale(1.05);
+  font-weight: 400;
+  color: #f2f1e8;
+}
+
+.links .arxiv {
+  color: #db1f48;
+  border-color: #db1f48;
+}
+
+.links .arxiv:hover {
+  background-color: #db1f48;
+}
+
+.links .code {
+  color: #FFA500;
+  border-color: #FFA500;
+}
+
+.links .code:hover {
+  background-color: #FFA500;
+}
+
+.links .project {
+  color: #01949a;
+  border-color: #01949a;
+}
+
+.links .project:hover{
+  background-color: #01949a;
+}
+
+.links .poster {
+  color: #104210;
+  border-color: #104210;
+}
+
+.links .poster:hover{
+  background-color: #104210;
+}
+
+.links .demo {
+  color: #004369;
+  border-color: #004369;
+}
+
+.links .demo:hover{
+  background-color: #004369;
 }
 
 .publication-preview {

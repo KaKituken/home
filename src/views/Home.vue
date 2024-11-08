@@ -3,24 +3,32 @@ import Header from '../components/Header.vue'
 import About from '../components/About.vue'
 import Publications from '../components/Publications.vue'
 import Research from '../components/Research.vue'
-import Contact from '../components/Contact.vue'
+import Visit from '../components/Visit.vue'
+
+function scrollToSection(sectionId) {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 </script>
 
 <template>
   <div class="container">
-    <Header />
+    <Header :scrollToSection="scrollToSection"/>
     <main>
       <About />
       <Publications />
       <Research />
-      <Contact />
+      <Visit />
     </main>
   </div>
 </template>
 
 <style scoped>
 .container {
-  max-width: 1200px;
+  /* max-width: 50vw; */
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
 }
