@@ -8,18 +8,18 @@ function openImage(url) {
 }
 
 const publications = [
-  // {
-  //   title: "Putting Any Object into Any Scene: Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
-  //   authors: "<strong>Jixuan He</strong>, Wanhua Li*, Ye Liu, Junsik Kim, Donglai Wei, Hanspeter Pfister",
-  //   journal: "Under Review",
-  //   year: null,
-  //   preview: `${import.meta.env.BASE_URL}assets/he2024affordance.jpg`,
-  //   arxiv: null,
-  //   code: null,
-  //   project: null,
-  //   demo: null,
-  //   poster: null
-  // },
+  {
+    title: "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
+    authors: "<strong>Jixuan He</strong>, Wanhua Li*, Ye Liu, Junsik Kim, Donglai Wei, Hanspeter Pfister",
+    journal: "Under Review",
+    year: null,
+    preview: `${import.meta.env.BASE_URL}assets/he2024affordance.png`,
+    arxiv: "https://arxiv.org/abs/2412.14462",
+    code: "https://github.com/KaKituken/affordance-aware-any",
+    project: "https://kakituken.github.io/affordance-any.github.io/",
+    demo: null,
+    poster: null
+  },
   {
     title: "R2-Tuning: Efficient Image-to-Video Transfer Learning for Video Temporal Grounding",
     authors: "Ye Liu, <strong>Jixuan He</strong>, Wanhua Li*, Junsik Kim, Donglai Wei, Hanspeter Pfister, Chang Wen Chen*",
