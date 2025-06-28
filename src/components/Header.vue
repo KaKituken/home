@@ -32,6 +32,7 @@ const props = defineProps({
       <a href="#publications" @click.prevent="scrollToSection('publications')">Publications</a>
       <a href="#research" @click.prevent="scrollToSection('research')">Research</a>
       <router-link to="/cv" class="gallery-link">CV</router-link>
+      <router-link to="/blog" class="gallery-link">Blog</router-link>
       <!-- <router-link to="/gallery" class="gallery-link">Gallery</router-link> -->
     </nav>
   </header>
