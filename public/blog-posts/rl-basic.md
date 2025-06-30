@@ -5,11 +5,11 @@ tags: ["reinforcement-learning", "ai", "class-note"]
 excerpt: "An introduction to basic RL concept. Based on *Machine Learning* instructed by Prof. Mingsheng Long from School of Software, Tsinghua University. Refined by ChatGPT."
 ---
 
-# Reinforcement Learning Tutorial: From Basics to Planning
+# Reinforcement Learning Notes: From Basics to Planning
 
 ## Table of Contents
 
-- [Reinforcement Learning Tutorial: From Basics to Planning](#reinforcement-learning-tutorial-from-basics-to-planning)
+- [Reinforcement Learning Notes: From Basics to Planning](#reinforcement-learning-notes-from-basics-to-planning)
   - [Table of Contents](#table-of-contents)
   - [What is Reinforcement Learning?](#what-is-reinforcement-learning)
   - [The Agent-Environment Loop](#the-agent-environment-loop)

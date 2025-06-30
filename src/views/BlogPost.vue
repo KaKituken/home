@@ -30,6 +30,15 @@ onMounted(() => {
   document.head.appendChild(hlCSS)
 
   loadPost()
+
+  // 尝试滚动到锚点
+  requestAnimationFrame(() => {
+    const [, , anchor] = window.location.hash.split('#')
+    if (anchor) {
+      const el = document.getElementById(anchor)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    }
+  })
 })
 
 async function loadPost() {
