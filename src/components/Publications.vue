@@ -9,6 +9,18 @@ function openImage(url) {
 
 const publications = [
   {
+    title: "Restage4D: Reanimating Deformable 3D Reconstruction from a Single Video",
+    authors: "<strong>Jixuan He</strong>, Chieh Hubert Lin, Lu Qi, Ming-Hsuan Yang",
+    journal: "Under Review",
+    year: null,
+    preview: `${import.meta.env.BASE_URL}assets/he2025restage.png`,
+    arxiv: null,
+    code: null,
+    project: null,
+    demo: null,
+    poster: null
+  },
+  {
     title: "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
     authors: "<strong>Jixuan He</strong>, Wanhua Li*, Ye Liu, Junsik Kim, Donglai Wei, Hanspeter Pfister",
     journal: "Under Review",
