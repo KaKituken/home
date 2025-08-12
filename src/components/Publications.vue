@@ -14,7 +14,7 @@ const publications = [
     journal: "Under Review",
     year: null,
     preview: `${import.meta.env.BASE_URL}assets/he2025restage.png`,
-    arxiv: null,
+    arxiv: "https://arxiv.org/abs/2508.06715",
     code: null,
     project: null,
     demo: null,
