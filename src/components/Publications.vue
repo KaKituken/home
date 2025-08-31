@@ -23,8 +23,8 @@ const publications = [
   {
     title: "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
     authors: "<strong>Jixuan He</strong>, Wanhua Li*, Ye Liu, Junsik Kim, Donglai Wei, Hanspeter Pfister",
-    journal: "Under Review",
-    year: null,
+    journal: "Personalization in Generative AI Workshop at ICCV",
+    year: 2025,
     preview: `${import.meta.env.BASE_URL}assets/he2024affordance.png`,
     arxiv: "https://arxiv.org/abs/2412.14462",
     code: "https://github.com/KaKituken/affordance-aware-any",
@@ -106,8 +106,8 @@ const highlightedPublications = computed(() => {
 }
 
 .publication {
-  margin-bottom: 2rem;
-  height: 12rem;
+  margin-bottom: 1rem;
+  height: 11rem;
   padding: 1.5rem;
   background: #f8f9fa;
   border-radius: 8px;

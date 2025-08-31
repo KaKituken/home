@@ -34,6 +34,8 @@
     <div class="news-container">
       <h2>News</h2>
       <ul>
+        <li>🎯 <b>[2025.08]</b> One paper about Image Composition accepeted by ICCV25 P13N Workshop!</li>
+        <li>🎓 <b>[2025.06]</b> I graduated from Cornell Tech!</li>
         <li>🗽 <b>[2024.08]</b> I began my Master's journey @ Cornell Tech NYC!</li>
         <li>🎯 <b>[2024.07]</b> One paper about Video Temporal Grounding accepeted by ECCV24!</li>
         <li>🎓 <b>[2024.06]</b> I graduated from Tsinghua University!</li>
