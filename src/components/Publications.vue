@@ -11,8 +11,8 @@ const publications = [
   {
     title: "Restage4D: Reanimating Deformable 3D Reconstruction from a Single Video",
     authors: "<strong>Jixuan He</strong>, Chieh Hubert Lin, Lu Qi, Ming-Hsuan Yang",
-    journal: "Under Review",
-    year: null,
+    journal: "The Annual Conference on Neural Information Processing Systems (NeurIPS)",
+    year: 2025,
     preview: `${import.meta.env.BASE_URL}assets/he2025restage.png`,
     arxiv: "https://arxiv.org/abs/2508.06715",
     code: null,
