@@ -1,7 +1,7 @@
 <script setup>
 const name = "Jason Jixuan He (何吉轩)"
-const title = "M.Eng. CS"
-const institution = "Cornell University (Cornell Tech)"
+const title = "Incoming CS Ph.D."
+const institution = "The University of North Carolina at Chapel Hill"
 
 const props = defineProps({
   scrollToSection: Function
