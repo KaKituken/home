@@ -1,5 +1,6 @@
 ---
 title: "Reinforcement Learning for LLMs"
+date: "2025-07-01"
 tags: ["reinforcement-learning", "llm", "tutorial"]
 excerpt: "Basic knowledge for RL in LLMs' scenario. Start from multi-armed bandit model to PPO with detailed explanation and sample codes." Based on slides from Cornell Tech's CS 5740 Natural Language Processing. Refined by ChatGPT.
 ---
