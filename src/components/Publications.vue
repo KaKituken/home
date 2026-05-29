@@ -9,6 +9,18 @@ function openImage(url) {
 
 const publications = [
   {
+    title: "Reasmory: 3D Reconstruction as Explicit Memory for VLMs Spatial Reasoning",
+    authors: "<strong>Jixuan He</strong>, Xueting Li, Chieh Hubert Lin, Ming-Hsuan Yang",
+    journal: "Under Review",
+    year: 2026,
+    preview: `${import.meta.env.BASE_URL}assets/he2026reasmory.png`,
+    arxiv: null,
+    code: null,
+    project: null,
+    demo: null,
+    poster: null
+  },
+  {
     title: "Restage4D: Reanimating Deformable 3D Reconstruction from a Single Video",
     authors: "<strong>Jixuan He</strong>, Chieh Hubert Lin, Lu Qi, Ming-Hsuan Yang",
     journal: "The Annual Conference on Neural Information Processing Systems (NeurIPS)",
