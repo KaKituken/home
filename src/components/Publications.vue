@@ -14,7 +14,7 @@ const publications = [
     journal: "Under Review",
     year: 2026,
     preview: `${import.meta.env.BASE_URL}assets/he2026reasmory.png`,
-    arxiv: null,
+    arxiv: "https://arxiv.org/abs/2606.00963",
     code: null,
     project: null,
     demo: null,
@@ -29,8 +29,8 @@ const publications = [
     arxiv: "https://arxiv.org/abs/2508.06715",
     code: null,
     project: null,
-    demo: null,
-    poster: null
+    demo: "https://neurips.cc/virtual/2025/loc/san-diego/poster/116957",
+    poster: "https://neurips.cc/media/PosterPDFs/NeurIPS%202025/116957.png?t=1764615118.592081"
   },
   {
     title: "Affordance-Aware Object Insertion via Mask-Aware Dual Diffusion",
