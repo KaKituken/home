@@ -8,7 +8,8 @@ export class BlogLoader {
         // 'sample-post-1.md',
         // 'sample-post-2.md',
         'rl-basic.md',
-        'Reinforcement_Learning_for_LLMs.md'
+        'Reinforcement_Learning_for_LLMs.md',
+        'From_DDPM_to_Flow_Matching.md'
         // Add more post filenames here as you create them
       ]
 
