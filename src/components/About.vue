@@ -27,6 +27,7 @@
     <div class="news-container">
       <h2>News</h2>
       <ul>
+        <li>🎯 <b>[2025.08]</b> One paper on VLMs Spatial Reasoning was accepted to BMVC 2026!</li>
         <li>🗼 <b>[2026.05]</b> I joined Shanda AI Research Tokyo for a summer internship!</li>
         <li><span class="inline-icon"><img src="../assets/UNC_primary_mark_blue.svg"></span><b>[2026.04]</b> I would join UNC-Chapel Hill as a Ph.D. student!</li>
         <li>🎯 <b>[2025.09]</b> One paper on 4D Content Creation was accepted to NeurIPS 2025!</li>

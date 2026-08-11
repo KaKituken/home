@@ -11,7 +11,7 @@ const publications = [
   {
     title: "Reasmory: 3D Reconstruction as Explicit Memory for VLMs Spatial Reasoning",
     authors: "<strong>Jixuan He</strong>, Xueting Li, Chieh Hubert Lin, Ming-Hsuan Yang",
-    journal: "Under Review",
+    journal: "The British Machine Vision Conference (BMVC)",
     year: 2026,
     preview: `${import.meta.env.BASE_URL}assets/he2026reasmory.png`,
     arxiv: "https://arxiv.org/abs/2606.00963",
