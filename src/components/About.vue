@@ -6,7 +6,7 @@
   <section id="about" class="section">
     <div class="about-container">
       <h2>About Me</h2>
-      <p>I am an incoming Ph.D. student at UNC-Chapel Hill, advised by <a href="https://jason718.github.io/">Prof. Jason Ren</a>. I received my M.Eng. in Computer Science from Cornell Tech in 2025 and my B.E. in Software Engineering from Tsinghua University in 2024.
+      <p>I am a first-year Ph.D. student at UNC-Chapel Hill, advised by <a href="https://jason718.github.io/">Prof. Jason Ren</a>. I received my M.Eng. in Computer Science from Cornell Tech in 2025 and my B.E. in Software Engineering from Tsinghua University in 2024.
         Previously, I worked with <a href="https://vcg.seas.harvard.edu/people/hanspeter-pfister">Prof. Hanspeter Pfister</a> at the Harvard Vision Computing Group on diffusion-based image editing and video understanding.
         I was also a student intern at the System Intelligence Group, <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia</a>, where I worked on LLM reasoning under the supervision of <a href="https://scholar.google.com/citations?user=UUyVnqgAAAAJ&hl=en">Dr. Xueting Han</a>.
         Currently, I am collaborating with <a href="https://faculty.ucmerced.edu/mhyang/">Prof. Ming-Hsuan Yang</a> on 3D/4D editing and visual reasoning.<br><br>
@@ -19,8 +19,9 @@
       <div class="education">
         <h3>Education</h3>
         <ul>
+          <li><b> Ph.D. in Computer Science</b>, UNC-Chapel Hill</li>
           <li><b> M.Eng. in Computer Science</b>, Cornell Tech</li>
-          <li><b>B.S. in Software Engineering</b>, Tsinghua University</li>
+          <li><b> B.S. in Software Engineering</b>, Tsinghua University</li>
         </ul>
       </div>
     </div>

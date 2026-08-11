@@ -1,6 +1,6 @@
 <script setup>
 const name = "Jason Jixuan He (何吉轩)"
-const title = "Incoming CS Ph.D."
+const title = "CS Ph.D."
 const institution = "The University of North Carolina at Chapel Hill"
 
 const props = defineProps({
