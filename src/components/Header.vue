@@ -19,7 +19,7 @@ const props = defineProps({
         <h2>{{ title }}</h2>
         <h3>{{ institution }}</h3>
         <div class="social-media">
-            <a href="mailto:jh2926@cornell.edu" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto:hejix@cs.unc.edu" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://github.com/KaKituken" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/jixuan-he/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://scholar.google.com/citations?user=xCIYDzsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-scholar"></i></a>

@@ -15,8 +15,8 @@ const publications = [
     year: 2026,
     preview: `${import.meta.env.BASE_URL}assets/he2026reasmory.png`,
     arxiv: "https://arxiv.org/abs/2606.00963",
-    code: null,
-    project: null,
+    code: "https://github.com/KaKituken/Reasmory",
+    project: "https://kakituken.github.io/Reasmory-project-page/",
     demo: null,
     poster: null
   },
