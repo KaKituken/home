@@ -268,9 +268,9 @@ const highlightedPublications = computed(() => {
 
 .publication-preview {
   flex: 1 0 200px;
-  align-self: flex-start;
+  align-self: stretch;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   background-color: white;
 }
 
