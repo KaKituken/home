@@ -130,8 +130,10 @@ const highlightedPublications = computed(() => {
 }
 
 .publication {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
-  height: 11rem;
+  min-height: 11rem;
   padding: 1.5rem;
   background: #f8f9fa;
   border-radius: 8px;
@@ -146,12 +148,15 @@ const highlightedPublications = computed(() => {
 .publication-content {
   display: flex;
   gap: 2rem;
-  height: 100%;
+  flex: 1;
+  align-items: stretch;
 }
 
 .publication-text {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   flex: 6;
+  min-width: 0;
 }
 
 .publication h3 {
@@ -185,12 +190,14 @@ const highlightedPublications = computed(() => {
 
 .publication-content .links {
   display: flex;
-  position: absolute;
+  flex-wrap: wrap;
   width: 100%;
-  height: 2rem;
+  min-height: 2rem;
   /* background-color: white; */
-  bottom: 0;
+  margin-top: auto;
+  padding-top: 0.5rem;
   gap: 0.7rem;
+  align-items: flex-start;
   line-height: inherit;
 }
 
@@ -261,7 +268,7 @@ const highlightedPublications = computed(() => {
 
 .publication-preview {
   flex: 1 0 200px;
-  height: 100%;
+  align-self: flex-start;
   display: flex;
   align-items: flex-start;
   background-color: white;
@@ -269,7 +276,7 @@ const highlightedPublications = computed(() => {
 
 .publication-preview img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit:contain;
   border-radius: 4px;
   cursor: pointer;
