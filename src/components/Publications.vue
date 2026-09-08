@@ -9,6 +9,18 @@ function openImage(url) {
 
 const publications = [
   {
+    title: "WorldSculpt: Generating Compositional Worlds from Grounded Videos",
+    authors: "Muyao Niu, <strong>Jixuan He</strong>, Ruihan Yu, Lian Fu, Yonghao Yu, Zheng-Hui Huang, Yifan Zhan, Fengbo Lan, Yongtao Ge, Yinqiang Zheng, Kaipeng Zhang, Zhixiang Wang",
+    journal: "Technical Report",
+    year: 2026,
+    preview: `${import.meta.env.BASE_URL}assets/WorldSculpt.webp`,
+    arxiv: "https://arxiv.org/abs/2609.05416",
+    code: "https://github.com/AlayaLab/WorldSculpt",
+    project: "https://alaya-lab.github.io/WorldSculpt/",
+    demo: null,
+    poster: null
+  },
+  {
     title: "Reasmory: 3D Reconstruction as Explicit Memory for VLMs Spatial Reasoning",
     authors: "<strong>Jixuan He</strong>, Xueting Li, Chieh Hubert Lin, Ming-Hsuan Yang",
     journal: "The British Machine Vision Conference (BMVC)",
