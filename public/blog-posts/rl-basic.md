@@ -5,29 +5,6 @@ tags: ["reinforcement-learning", "ai", "class-note"]
 excerpt: "An introduction to basic RL concept. Based on *Machine Learning* instructed by Prof. Mingsheng Long from School of Software, Tsinghua University. Refined by ChatGPT."
 ---
 
-# Reinforcement Learning Notes: From Basics to Planning
-
-## Table of Contents
-
-- [Reinforcement Learning Notes: From Basics to Planning](#reinforcement-learning-notes-from-basics-to-planning)
-  - [Table of Contents](#table-of-contents)
-  - [What is Reinforcement Learning?](#what-is-reinforcement-learning)
-  - [The Agent-Environment Loop](#the-agent-environment-loop)
-  - [States, Observations, and Rewards](#states-observations-and-rewards)
-  - [Understanding Markov Reward Processes (MRPs)](#understanding-markov-reward-processes-mrps)
-  - [Solving MRPs with Bellman Equations](#solving-mrps-with-bellman-equations)
-  - [Moving to Markov Decision Processes (MDPs)](#moving-to-markov-decision-processes-mdps)
-  - [Value Functions and What They Tell Us](#value-functions-and-what-they-tell-us)
-  - [Learning via Bellman Equations in MDPs](#learning-via-bellman-equations-in-mdps)
-  - [What Makes a Policy Optimal?](#what-makes-a-policy-optimal)
-  - [Planning in Known Environments](#planning-in-known-environments)
-    - [Two Core Tasks](#two-core-tasks)
-    - [Policy Evaluation via Iteration](#policy-evaluation-via-iteration)
-    - [Policy Improvement](#policy-improvement)
-    - [Policy Iteration: Putting It Together](#policy-iteration-putting-it-together)
-
----
-
 ## What is Reinforcement Learning?
 
 Reinforcement Learning (RL) is a framework where an agent interacts with an environment to learn behaviors that maximize cumulative rewards over time. Think of it as trial-and-error learning driven by feedback signals (rewards).

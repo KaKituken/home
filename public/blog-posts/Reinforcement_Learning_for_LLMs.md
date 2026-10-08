@@ -4,44 +4,6 @@ date: "2025-07-01"
 tags: ["reinforcement-learning", "llm", "tutorial"]
 excerpt: Basic knowledge for RL in LLMs' scenario. Start from multi-armed bandit model to PPO with detailed explanation and sample codes." Based on slides from Cornell Tech's CS 5740 Natural Language Processing. Refined by ChatGPT.
 ---
-# Reinforcement Learning for LLMs
-
-## Table of Contents
-- [Reinforcement Learning for LLMs](#reinforcement-learning-for-llms)
-  - [Table of Contents](#table-of-contents)
-  - [Multi-Armed Bandit](#multi-armed-bandit)
-    - [Settings](#settings)
-    - [Formalization](#formalization)
-    - [Policy Gradient in Multi-Armed Bandit](#policy-gradient-in-multi-armed-bandit)
-    - [Log-derivative Trick](#log-derivative-trick)
-    - [Code Simulation](#code-simulation)
-      - [Problem Setup](#problem-setup)
-      - [Pseudocode](#pseudocode)
-      - [Python Implementation](#python-implementation)
-  - [From Bandit to Contextual Bandit](#from-bandit-to-contextual-bandit)
-    - [Model the LLMs](#model-the-llms)
-    - [Formalization of Contextual Bandit](#formalization-of-contextual-bandit)
-    - [Policy Gradient for Contextual Bandit](#policy-gradient-for-contextual-bandit)
-  - [Proximal Policy Optimization (PPO): From Bandit to Full RL](#proximal-policy-optimization-ppo-from-bandit-to-full-rl)
-    - [**Motivation: Beyond Bandits**](#motivation-beyond-bandits)
-    - [Markov Decision Process (MDP)](#markov-decision-process-mdp)
-    - [Policy Gradient: Trajectory Form](#policy-gradient-trajectory-form)
-    - [Advantage Function](#advantage-function)
-    - [**Proximal Policy Optimization (PPO)**](#proximal-policy-optimization-ppo)
-    - [Minimal PPO Simulation](#minimal-ppo-simulation)
-      - [Environment](#environment)
-      - [PPO Objective in Bandit Setting](#ppo-objective-in-bandit-setting)
-      - [Pseudocode](#pseudocode-1)
-      - [Python Code](#python-code)
-  - [Reward Modeling via Preference](#reward-modeling-via-preference)
-    - [**Bradley-Terry Model**](#bradley-terry-model)
-    - [Loss Function](#loss-function)
-    - [Usage in PPO](#usage-in-ppo)
-    - [Code Simulation](#code-simulation-1)
-
----
-
-
 ## Multi-Armed Bandit
 
 ### Settings

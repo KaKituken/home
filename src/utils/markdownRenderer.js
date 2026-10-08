@@ -85,5 +85,14 @@ export function renderMarkdown(markdown) {
     return renderKatex(math, displayMode)
   })
 
+  // Promote a standalone image into a <figure>, using the markdown title
+  // (![alt](src "caption")) as the caption underneath it.
+  html = html.replace(/<p>\s*(<img\b[^>]*>)\s*<\/p>/g, (match, img) => {
+    const title = img.match(/\stitle="([^"]*)"/)
+    const caption = title ? title[1] : ''
+    const cleaned = img.replace(/\stitle="[^"]*"/, '')
+    return `<figure>${cleaned}${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`
+  })
+
   return html
 }
